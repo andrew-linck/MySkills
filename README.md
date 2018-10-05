@@ -15,6 +15,6 @@ module.exports = keys;</br>
 get here -> https://developer.riotgames.com/
 
 # Then go to main dir and run these commands
-yarn
-yarn build
+yarn</br> 
+yarn build</br> 
 yarn start
