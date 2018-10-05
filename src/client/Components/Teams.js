@@ -17,7 +17,7 @@ class Teams extends Component {
     axios.get(`/${this.props.params.tourney}`)
     .then(res => {
       if(res.data === "Log In First") {
-        window.location.replace("http://35.175.100.233")
+        window.location.replace("http://localhost")
       }
       const teams = res.data;
       this.setState({ teams });
