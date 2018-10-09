@@ -50,7 +50,8 @@ class Team extends Component {
 
     return (
       <div className="Team">
-        <h1>tourney.link/{this.props.params.tourney}/{this.props.params.team}</h1>
+        <h1>{window.location.href}</h1>
+	<p>Send this link to your teamates {window.location.href}</p>
         <ul>
           {teamMember}
         </ul>

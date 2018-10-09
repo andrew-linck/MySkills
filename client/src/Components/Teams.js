@@ -43,15 +43,15 @@ class Teams extends Component {
       <div className="Teams">
         <h1>tourney.link/{this.state.tourney}</h1>
         <CreateTeam tourney={this.state.tourney} />
-        <h3>Teams</h3>
+        <h2>Teams</h2>
           <ul>
             {teams}
           </ul>
           <hr id="Teams"/>
           <h1>Info</h1>
-          <h3>Saturday September 27th</h3>
+          <h4>Saturday September 27th</h4>
           <p>8pm est. 5pm pst. 6pm mst.</p>
-          <h3>Single-Elimination(One Life)</h3>
+          <h4>Single-Elimination(One Life)</h4>
           <p>Semi-Finals: Best of 3</p>
           <p>Finals: Best of 5</p>
       </div>

@@ -3,6 +3,6 @@ const app = require('./app');
 
 const server = http.createServer(app);
 
-server.listen(9000, function(){
-    console.log('Express server listening on port ' + '9000');
+server.listen(3000, function(){
+    console.log('Express server listening on port ' + '3000');
 });

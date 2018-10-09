@@ -50,7 +50,7 @@ class CreateTourney extends Component {
     return (
       <div className="Create-Tourney">
         <form onSubmit={this.submit}>
-          tourney.link/<input type="text" className="feedback-input" onChange={this.change} name="tourneyName" value={this.state.tourneyName} />
+          tourney.link/<input type="text" className="feedback-input" onChange={this.change} name="tourneyName" value={this.state.tourneyName} placeholder="Tourney Name" />
           <input type="submit" className="feedback-input" value="Create Tourney" />
         </form>
         <form onSubmit={this.logout}>

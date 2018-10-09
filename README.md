@@ -18,3 +18,9 @@ get here -> https://developer.riotgames.com/
 yarn</br> 
 yarn build</br> 
 yarn start
+
+# Technologies Used
+React
+Node.js
+Nginx
+API
