@@ -1,18 +1,17 @@
-var bcrypt = require('bcrypt');
 var mongoose = require('mongoose');
-
 var Schema = mongoose.Schema;
 
 var tourneySchema = new Schema({
-  tourneyName: {
+  id: {
     type: String,
     unique: true,
   },
-  teams: [{
-    teamName: String,
-    players: [{type: String}],
-  }]
+  state: {
+    type: String,
+  },
+  participants: [
+  ]
 });
 
-var Tourney = mongoose.model('Tourney', tourneySchema);
+var Tourney = mongoose.model('tourney', tourneySchema);
 module.exports = Tourney;

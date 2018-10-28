@@ -7,11 +7,8 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const MongoStore = require('connect-mongo')(session);
 
-const summonerRoutes = require("./api/routes/summoner");
-const tourneyRoutes = require("./api/routes/tourneys");
-const teamRoutes = require("./api/routes/teams");
-const logoutRoutes = require("./api/routes/logout");
-const loginRoutes = require("./api/routes/login");
+const accountRoutes = require("./api/routes/user");
+const tourneyRoutes = require("./api/routes/tourney");
 
 mongoose.connect("mongodb://localhost/tourney", { useNewUrlParser: true })
     .then(function (db) {
@@ -25,8 +22,6 @@ db.once('open', function() {
 });
 
 app.use(express.static('dist'));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.json());
 
 app.use(session({
   secret: 'work hard',
@@ -47,10 +42,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(loginRoutes);
-app.use(logoutRoutes);
-app.use(summonerRoutes);
-app.use(teamRoutes);
+app.use(accountRoutes);
 app.use(tourneyRoutes);
 
 module.exports = app;
