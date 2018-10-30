@@ -1,4 +1,6 @@
 # HACK
 hack atl project
 
-## SUPREME TOURNAMENTS
+## ETourney
+
+Building the platform
