@@ -1,8 +1,7 @@
-# HACKATL Hackathon Project
-eSports Website, Emory University Hackathon               		                                          Oct. 2018 – Present
+# MY SKILLS
+What can YOU offer?
 
-eSports website designed to grant customers with the opportunity of betting on themselves in a competition with friends and winning money if their overall rank is higher than their friends’ rank in online ranked matches of Fortnite.
+# SHOWCASE YOUR VALUABLE SKILLS
+Compete against your peers in skill specific challenges created by verified experts to determine your competence.
 
-## ETourney
-
-Building the platform
+#
